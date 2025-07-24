@@ -1,0 +1,6 @@
+crewai
+crewai_tools
+langchain-groq
+python-dotenv
+yt_dlp
+youtube-transcript-api
