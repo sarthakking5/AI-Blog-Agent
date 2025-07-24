@@ -58,25 +58,25 @@ These agents are built using crewai.Agent.
 ### 3. `tasks.py`: Task Definations
 Two main tasks are assigned to the agents:
 
-Research Task
+#### Research Task
 
-Description: Locate a video on {topic} and extract detailed content.
+- Description: Locate a video on {topic} and extract detailed content.
 
-Expected Output: A three-paragraph article with a suitable title.
+- Expected Output: A three-paragraph article with a suitable title.
 
-Assigned Agent: blog_researcher
+- Assigned Agent: blog_researcher
 
-Tool: yt_tool
+- Tool: yt_tool
 
-Writing Task
+#### Writing Task
 
-Description: Use the research to generate a blog post.
+- Description: Use the research to generate a blog post.
 
-Expected Output: Blog content in Markdown format.
+- Expected Output: Blog content in Markdown format.
 
-Assigned Agent: blog_writer
+- Assigned Agent: blog_writer
 
-Tool: yt_tool
+- Tool: yt_tool
 
 Async: Set to False for sequential execution.
 
@@ -103,6 +103,8 @@ result = crew.kickoff(inputs={'topic': 'AI Agents, Clearly Explained'})
 print(result)
 ```
 This will generate the blog content and save it in `new-blog-post.md`.
+
+---
 
 ## ✅ Setup Instructions
 
@@ -132,7 +134,7 @@ This will:
 - Extract relevant content
 
 - Generate a blog post in new-blog-post.md
-
+---
 ## 📝 Example Output
 The final output will be a well-written blog post including:
 
