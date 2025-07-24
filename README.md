@@ -35,23 +35,23 @@ Two CrewAI agents are defined:
 
 #### Blog Researcher
 
-Role: Finds and analyzes relevant video content.
+- Role: Finds and analyzes relevant video content.
 
-Goal: Understand complex tech topics like AI, ML, and Generative AI.
+- Goal: Understand complex tech topics like AI, ML, and Generative AI.
 
-Tool: yt_tool
+- Tool: yt_tool
 
-Features: Verbose output, memory enabled, delegation allowed.
+- Features: Verbose output, memory enabled, delegation allowed.
 
 #### Blog Writer
 
-Role: Writes an engaging blog post from research.
+- Role: Writes an engaging blog post from research.
 
-Goal: Convert technical content into a clear, readable blog.
+- Goal: Convert technical content into a clear, readable blog.
 
-Tool: yt_tool
+- Tool: yt_tool
 
-Features: Verbose output, memory enabled, no delegation.
+- Features: Verbose output, memory enabled, no delegation.
 
 These agents are built using crewai.Agent.
 
