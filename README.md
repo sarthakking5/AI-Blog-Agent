@@ -33,7 +33,7 @@ yt_tool = YoutubeChannelSearchTool(youtube_channel_handle='@channelname')
 ### 2. `agents.py`: AI Agents
 Two CrewAI agents are defined:
 
-Blog Researcher
+#### Blog Researcher
 
 Role: Finds and analyzes relevant video content.
 
@@ -43,7 +43,7 @@ Tool: yt_tool
 
 Features: Verbose output, memory enabled, delegation allowed.
 
-Blog Writer
+#### Blog Writer
 
 Role: Writes an engaging blog post from research.
 
@@ -103,3 +103,45 @@ result = crew.kickoff(inputs={'topic': 'AI Agents, Clearly Explained'})
 print(result)
 ```
 This will generate the blog content and save it in `new-blog-post.md`.
+
+## ✅ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+### 2. Install dependencies
+
+Make sure you have Python 3.8 or higher.
+```bash
+pip install -r requirements.txt
+```
+### 3. Set up environment variables
+Create a `.env` file in the root directory and add your OpenAI API key:
+```ini
+OPENAI_API_KEY=your_openai_api_key
+```
+### 4. Run the application
+``` bash
+python crew.py
+```
+This will:
+- Search a YouTube channel for the given topic
+
+- Extract relevant content
+
+- Generate a blog post in new-blog-post.md
+
+## 📝 Example Output
+The final output will be a well-written blog post including:
+
+- A relevant title
+
+- Three concise, informative paragraphs
+
+- Markdown formatting
+
+- Content derived from an actual YouTube video
+
+
